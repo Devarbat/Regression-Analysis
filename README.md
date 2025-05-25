@@ -49,7 +49,10 @@ Preferencefor5GPer (Continuous)
 Output:
 
 ![image](Normality.png)
+Normality Plot
 
+![image](Residual plot.png)
+Residual Plot
 
 - **Checking the Multicollinearity**:
 
@@ -113,6 +116,18 @@ Output:
 	m <- Mobile[,-(1:4)]
 	round(cor(m[,c(2,1,4:8)]),2)
 
-
 ```  
-  
+Output:
+
+![image](Correlation pairs.png)
+
+```R
+	vif(M1)
+X5GCapabilityBool      MarketSharePer  Regional5GCoveragePer X5GSubscribersMillions         
+
+2.838115               2.509538               1.211113               1.168005               
+
+Avg5GSpeedMbps     Preferencefor5GPer 
+
+1.102620               1.126178 
+```
