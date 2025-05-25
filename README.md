@@ -52,6 +52,7 @@ Output:
 Normality Plot
 
 ![image](https://github.com/user-attachments/assets/573715e2-3bd9-45d8-8ebc-4d93f0523e3c)
+
 Residual Plot
 
 - **Checking the Multicollinearity**:
@@ -119,7 +120,8 @@ Residual Plot
 ```  
 Output:
 
-![image](Correlation pairs.png)
+![image](https://github.com/user-attachments/assets/3ff83114-c7cd-434c-ae52-cf59dc4e6003)
+
 
 ```R
 	vif(M1)
