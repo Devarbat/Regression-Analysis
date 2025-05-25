@@ -51,7 +51,7 @@ Output:
 ![image](Normality.png)
 Normality Plot
 
-![image](Residual plot.png)
+![image](https://github.com/user-attachments/assets/573715e2-3bd9-45d8-8ebc-4d93f0523e3c)
 Residual Plot
 
 - **Checking the Multicollinearity**:
