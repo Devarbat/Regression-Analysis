@@ -261,7 +261,7 @@ Multiple R-squared:  0.1525,	Adjusted R-squared:  0.1006
 F-statistic: 2.939 on 3 and 49 DF,  p-value: 0.04225
 ```
 
-- **Comparing Full Model and Reduced Model
+- **Comparing Full Model and Reduced Model**
 
 ```R
 #Full Model
@@ -288,4 +288,30 @@ F-statistic: 2.939 on 3 and 49 DF,  p-value: 0.04225
 
 ```
 
+### 3. Questions
+
+- 1] **How does each predictor uniquely contribute to predicting units sold? Which predictors significantly impact the number of units sold?**
+
+Answer:Using the Full model, we can conclude that the predictor 5GCapabilityBool significantly contributes to predicting units sold, with a positive coefficient of 18,362 and a p-value of 0.027, indicating that 5G capable phones are associated with a higher number of units sold. MarketSharePer also shows a marginally significant negative impact (p = 0.077), suggesting that an increase in market share percentage may be linked to a slight reduction in units sold, possibly due to other influencing market dynamics. 
+However, Regional5GCoveragePer, 5GSubscribersMillions, Avg5GSpeedMbps, and Preferencefor5GPer - do not have statistically significant effects on units sold, as their p-values are all well above the 0.05 threshold.
+Also, as p-value for overall F-test is 0.1425 i.e > 0.05. Thus, we fail to reject the null hypothesis. Hence, the overall model is not statistically significant. The predictor may not reliably predict units sold. 
+
+-- 2] **Does model capability, with or without 5G, impact on the units sold?**
+
+Answer: Yes, model capability—specifically whether a phone has 5G or not—does impact the number of units sold. Using the reduced model, the variable 5GCapabilityBool has a statistically significant positive coefficient of 18,677 with a p-value of 0.013, which is below the 0.05 threshold. This means that, on average, models with 5G capability are associated with 18,677 more units sold compared to those without 5G, holding other factors constant. Therefore, the presence of 5G in a mobile device significantly increases its sales performance.
+
+-- 3] **Does the increase in 5G subscribers impact Samsung models' sales and market share?**
+
+Answer: Based on the full model, the p-value for X5GSubscribersMillions is 0.35391, which is greater than the 0.05 significance level. Thus, we fail to reject the null hypothesis, indicating that the number of 5G subscribers does not significantly contribute to predicting Units Sold. Therefore, we conclude that an increase in 5G subscribers does not have a significant impact on Samsung models’ sales or market share within this dataset.
+
+
+### 3. Summary
+
+This analysis explored the impact of various 5G and non-5G Samsung phone sales in North America from 2021 to 2024. Using multiple linear regression, the study assessed how predictors such as 5G capability, market share, regional 5G coverage, 5G subscribers, average 5G speed, and customer preference for 5G influence the number of units sold.
+Initially, the full model was used. It revealed that among all predictors, only 5G capability showed a statistically significant positive effect on units sold. Market share displayed a marginally significant effect, while other variables did not show meaningful contributions. The overall model, however, was not statistically significant, indicating that the full set of predictors may not reliably explain the variability in unit sales.
+To improve model efficiency, a stepwise regression was performed, resulting in a reduced model that retained only three predictors: 5G capability, market share, and average 5G speed. Further analysis of the reduced model showed that only 5G capability impacted units sold. Then, comparing the reduced model with the full model, the reduced model showed improved AIC and BIC values, suggesting a better balance of accuracy and simplicity. 
+
+### 4. Key Takeaways
+
+The key takeaway from this project is that Samsung’s 5G capability is a major driver of phone sales in the North American market. In contrast, factors such as regional 5G coverage, subscriber base, and average 5G speed do not significantly influence sales. Focusing on enhancing and promoting 5G-enabled models is likely to yield better sales performance for Samsung.
 
