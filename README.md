@@ -48,11 +48,8 @@ Preferencefor5GPer (Continuous)
 ```
 Output:
 
-![image](https://github.com/Devarbat/Statistical-Analysis-on-Drug-potency-using-R-Studio/blob/29240eea75b1f5d28223ebdf39c1228c37aa36b8/Sample_1.png)
-Sample_1
+![image](Normality.png)
 
-![image_2](https://github.com/Devarbat/Statistical-Analysis-on-Drug-potency-using-R-Studio/blob/29240eea75b1f5d28223ebdf39c1228c37aa36b8/sample_2.png)
-Sample_2
 
 - **Checking the Multicollinearity**:
 
